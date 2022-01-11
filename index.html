@@ -1,23 +1,27 @@
 <html>
 <head>
-<title>Sam Leader</title>
-<style type="text/css">* {cursor: url(https://cur.cursors-4u.net/people/peo-2/peo158.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2006/02/20/peo158.html" target="_blank" title="United States President - Bush, George W."><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="United States President - Bush, George W." style="position:absolute; top: 0px; right: 0px;" /></a>
+    <title>Sam Leader</title>
+    <script>
+        fuction = toggleTheme(value) {
+            var ldtheme = document.getElementsByTagName('link')[0];
+            if (ldtheme.getAttribute('href') == 'light.css') {
+                ldtheme.setAttribute('href', 'dark.css');
+            } else {
+                theme.setAttribute('href', 'light.css');
+            }
+        }
+    </script>
+    <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/people/peo-2/peo158.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2006/02/20/peo158.html" target="_blank" title="United States President - Bush, George W."><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="United States President - Bush, George W." style="position:absolute; top: 0px; right: 0px;" /></a>
 </head>
 <body>
-<h1>My name is Sam Leader</h1>
-<p>Welcome to my website! I am a first year engineering student at the University of Alberta.</p>
-<p>Some of my interests include computers, music and programming.</p>
-<h3>Links</h3>
-<p><a href="./files/resume.pdf" target="_blank">Resume</a></p>
-<p><a href="https://www.linkedin.com/in/sam-leader/" target="_blank">LinkedIn</a></p>
-<p><a href="https://github.com/samldr" target="_blank">Github</a></p>
-<p><a href="projects.html">Projects</a></p>
-<button onclick="toggleLightDark()">Dark/Light Mode</button>
-<script>
-    fuction = toggleLightDark() {
-        var element = document.body;
-        element.classList.toggle("dark");
-    }
-</script>
+    <h1>My name is Sam Leader</h1>
+    <p>Welcome to my website! I am a first year engineering student at the University of Alberta.</p>
+    <p>Some of my interests include computers, music and programming.</p>
+    <h3>Links</h3>
+    <p><a href="./files/resume.pdf" target="_blank">Resume</a></p>
+    <p><a href="https://www.linkedin.com/in/sam-leader/" target="_blank">LinkedIn</a></p>
+    <p><a href="https://github.com/samldr" target="_blank">Github</a></p>
+    <p><a href="projects.html">Projects</a></p>
+    <button onclick="toggleTheme()">Theme Toggle</button>
 </body>
 </html>
