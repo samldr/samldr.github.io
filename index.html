@@ -1,16 +1,11 @@
 <html>
 <head>
     <title>Sam Leader</title>
-    <link id="ldtheme" rel="stylesheet" 
-        type="text/css" href="/styles/light.css"/>
+    <link  rel="stylesheet" type="text/css" href="style.css"/>
     <script>
         function toggleTheme() {
-            var ldtheme = document.getElementsByTagName('link')[0];
-            if (ldtheme.getAttribute('href') == '/styles/light.css') {
-                ldtheme.setAttribute('href', '/styles/dark.css');
-            } else {
-                theme.setAttribute('href', '/styles/light.css');
-            }
+            var element = document.body;
+            element.classList.toggle("dark-mode");
         }
     </script>
 </head>
@@ -19,10 +14,11 @@
     <p>Welcome to my website! I am a first year engineering student at the University of Alberta.</p>
     <p>Some of my interests include computers, music and programming.</p>
     <h3>Links</h3>
-    <p><a href="./files/resume.pdf" target="_blank">Resume</a></p>
-    <p><a href="https://www.linkedin.com/in/sam-leader/" target="_blank">LinkedIn</a></p>
-    <p><a href="https://github.com/samldr" target="_blank">Github</a></p>
-    <p><a href="projects.html">Projects</a></p>
-    <button onclick="toggleTheme()">Theme Toggle</button>
+    <p> <a href="src/resume.pdf" target="_blank">Resume</a>
+        <a href="https://github.com/samldr" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/sam-leader/" target="_blank">LinkedIn</a>
+        <a href="projects.html">Projects</a>
+    </p>
+    <button onclick="toggleTheme()">Light/Dark</button>
 </body>
 </html>
