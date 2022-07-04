@@ -22,12 +22,6 @@ a {
     padding: 10px;  
 }
 
-@media (max-width: 600px) {
-    .body-par{
-        width: 50%;
-    }
-}
-
 .nav {
    justify-content: space-between;
    display: flex;
