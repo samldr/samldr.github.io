@@ -36,7 +36,8 @@ a {
 }
 
 .links-min{
-    padding: 6px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .btn {
@@ -45,4 +46,28 @@ a {
     color:inherit;
     font-size: 0px;
     padding: 0%;
+    cursor:pointer;
+}
+
+.body-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .body-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .body-par{
+        width: 100%;
+    }
 }
