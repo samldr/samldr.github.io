@@ -1,30 +1,35 @@
+/* general */
+
 body {
     background-color:#181818; 
     color: white;
     font-family: 'Courier New', Courier, monospace;
     text-align: left;
     vertical-align: middle;
-    margin-top: 72px;    
+    margin-top: 72px;
 }
 
-a {
-    color:inherit;
- }
+a {color:inherit;}
 
 .light-mode {
     background-color:white; 
     color: black;
 }
 
-.body-par {
-    margin: auto;
-    width: 35%;
-    padding: 10px;  
+/* divs w/ animations*/
+.nav {
+    justify-content: space-between;
+    display: flex;
+ 
+    opacity: 0;
+    animation: fadeIn 1s ease-in;
+    animation-fill-mode: forwards;
 }
 
-.nav {
-   justify-content: space-between;
-   display: flex;
+.paragraphs {
+    opacity: 0;
+    animation: fadeIn 1s ease-in 500ms;
+    animation-fill-mode: forwards;
 }
 
 .links {
@@ -33,11 +38,35 @@ a {
     justify-content: center;
     align-items: center;
 
+    opacity: 0;
+    animation: fadeIn 1s ease-in 750ms;
+    animation-fill-mode: forwards;
 }
 
-.links-min{
-    padding-left: 2px;
-    padding-right: 2px;
+.btn-out {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    animation: fadeIn 1s ease-in 250ms;
+    animation-fill-mode: forwards;
+}
+
+/* divs w/o animations */
+.body-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.body-par {
+    margin: auto;
+    width: 35%;
+    padding: 10px;  
 }
 
 .btn {
@@ -49,14 +78,12 @@ a {
     cursor:pointer;
 }
 
-.body-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
+.links-spacing{
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
+/* at-rules */
 @media only screen and (max-width: 900px) {
     body {
         margin-top: 0px;
@@ -74,4 +101,9 @@ a {
     .body-par{
         width: 100%;
     }
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
