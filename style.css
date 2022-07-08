@@ -5,6 +5,7 @@ body {
     text-align: left;
     vertical-align: middle;
     margin-top: 72px;
+    transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
 }
 
 a {color:inherit;}
@@ -109,4 +110,8 @@ a {color:inherit;}
 @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+
+@keyframes toDark{
+
 }
