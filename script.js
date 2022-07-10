@@ -15,13 +15,11 @@ function darkTheme() {
 function themeCheck() {
     if (localStorage.getItem('mode') != null){
         var theme = localStorage.getItem('mode');
-        var element = document.body;
         
-        if (element.classList.contains(theme) == false){
-            element.classList.add(theme);
+        if (document.body.classList.contains(theme) == false){
+            document.body.classList.add(theme);
         }
     } else {
         darkTheme()
     }
-    element.style.setProperty('visibility', 'visible');
 }
