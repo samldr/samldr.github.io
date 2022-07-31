@@ -1,0 +1,162 @@
+.grid{
+    height: 20%;
+    display: grid;
+    margin: 10px;
+
+    gap: 0px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: stretch;
+   
+
+}
+
+
+.item1{
+    text-align: center;
+    height:auto;
+    border: 2px solid transparent;
+
+    opacity: 0;
+    animation: fadeIn 1s ease-in 500ms;
+    animation-fill-mode: forwards;
+}
+
+.item1:hover{
+    font-size: 104%;
+    border: 0px solid transparent;
+    font-weight: bold;
+}
+
+.item2{
+    text-align: center;
+    height:auto;
+    border: 2px solid transparent;
+
+    opacity: 0;
+    animation: fadeIn 1s ease-in 550ms;
+    animation-fill-mode: forwards;
+}
+
+.item2:hover{
+    font-size: 104%;
+    border: 0px solid transparent;
+    font-weight: bold;
+}
+
+.item3{
+    text-align: center;
+    height:auto;
+    border: 2px solid transparent;
+
+    opacity: 0;
+    animation: fadeIn 1s ease-in 600ms;
+    animation-fill-mode: forwards;
+}
+
+.item3:hover{
+    font-size: 104%;
+    border: 0px solid transparent;
+    font-weight: bold;
+}
+
+.item4{
+    text-align: center;
+    height:auto;
+    border: 2px solid transparent;
+
+    opacity: 0;
+    animation: fadeIn 1s ease-in 650ms;
+    animation-fill-mode: forwards;
+}
+
+.item4:hover{
+    font-size: 104%;
+    border: 0px solid transparent;
+    font-weight: bold;
+}
+
+.item5{
+    text-align: center;
+    height:auto;
+    border: 2px solid transparent;
+
+    opacity: 0;
+    animation: fadeIn 1s ease-in 700ms;
+    animation-fill-mode: forwards;
+}
+
+.item5:hover{
+    font-size: 104%;
+    border: 0px solid transparent;
+    font-weight: bold;
+}
+
+.item6{
+    text-align: center;
+    height:auto;
+    border: 2px solid transparent;
+
+    opacity: 0;
+    animation: fadeIn 1s ease-in 750ms;
+    animation-fill-mode: forwards;
+}
+
+.item6:hover{
+    font-size: 104%;
+    border: 0px solid transparent;
+    font-weight: bold;
+}
+
+.item7{
+    text-align: center;
+    height:auto;
+    border: 2px solid transparent;
+
+    opacity: 0;
+    animation: fadeIn 1s ease-in 800ms;
+    animation-fill-mode: forwards;
+}
+
+.item7:hover{
+    font-size: 104%;
+    border: 0px solid transparent;
+    font-weight: bold;
+}
+
+.item8{
+    text-align: center;
+    height:auto;
+    border: 2px solid transparent;
+
+    opacity: 0;
+    animation: fadeIn 1s ease-in 850ms;
+    animation-fill-mode: forwards;
+}
+
+.item9:hover{
+    font-size: 104%;
+    border: 0px solid transparent;
+    font-weight: bold;
+}
+
+.item9{
+    text-align: center;
+    height:auto;
+    border: 2px solid transparent;
+
+    opacity: 0;
+    animation: fadeIn 1s ease-in 900ms;
+    animation-fill-mode: forwards;
+}
+
+.item8:hover{
+    font-size: 104%;
+    border: 0px solid transparent;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

@@ -13,12 +13,15 @@ a {color:inherit;}
 .dark-mode {
     background-color:#181818; 
     color: white;
+    fill: white;
 }
 
 .light-mode {
     background-color:white; 
     color: black;
+    fill: black;
 }
+
 
 /* divs w/ animations*/
 .nav {
@@ -27,6 +30,16 @@ a {color:inherit;}
  
     opacity: 0;
     animation: fadeIn 1s ease-in;
+    animation-fill-mode: forwards;
+}
+
+.subtitles {
+    justify-content: left;
+    align-items: center;
+    display: flex;
+
+    opacity: 0;
+    animation: fadeIn 1s ease-in 1000ms;
     animation-fill-mode: forwards;
 }
 
@@ -83,8 +96,12 @@ a {color:inherit;}
 }
 
 .links-spacing{
-    padding-left: 2px;
-    padding-right: 2px;
+
+    padding-right: 4px;
+}
+
+.subtitlecontainer{
+    padding-right: 8px;
 }
 
 /* at-rules */
@@ -110,8 +127,4 @@ a {color:inherit;}
 @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
-}
-
-@keyframes toDark{
-
 }
