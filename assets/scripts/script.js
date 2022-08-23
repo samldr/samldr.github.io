@@ -23,3 +23,12 @@ function themeCheck() {
         darkTheme()
     }
 }
+
+function linkDisplay(num) {
+    var title = document.getElementsByTagName("a")[num].getAttribute("title");
+    document.getElementById("linkTitle").innerHTML = title;
+}
+
+function linkHide() {
+    document.getElementById("linkTitle").innerHTML = null;
+}
