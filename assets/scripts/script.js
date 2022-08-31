@@ -29,6 +29,6 @@ function linkDisplay(num) {
     document.getElementById("linkTitle").innerHTML = title;
 }
 
-function linkHide() {
-    document.getElementById("linkTitle").innerHTML = null;
+function linkHide() {       
+    //document.getElementById("linkTitle").innerHTML = null;
 }
