@@ -1,20 +1,24 @@
 .grid{
     height: 20%;
     display: grid;
-    margin: 10px;
+    padding-bottom: 16px;
 
-    gap: 0px;
+
+    grid-template-rows: auto auto auto;
     grid-template-columns: auto auto auto;
-    justify-content: space-between;
-    align-items: stretch;
-   
+    
+    column-gap: 8px;
+    row-gap: 2px;
 
+    justify-content: center;
+    align-items: center;
 }
 
 
-.item1{
+.item{
     text-align: center;
     height:auto;
+    place-self: center;
     border: 2px solid transparent;
 
     opacity: 0;
@@ -22,138 +26,9 @@
     animation-fill-mode: forwards;
 }
 
-.item1:hover{
-    font-size: 104%;
-    border: 0px solid transparent;
-    font-weight: bold;
-}
-
-.item2{
-    text-align: center;
-    height:auto;
-    border: 2px solid transparent;
-
-    opacity: 0;
-    animation: fadeIn 1s ease-in 550ms;
-    animation-fill-mode: forwards;
-}
-
-.item2:hover{
-    font-size: 104%;
-    border: 0px solid transparent;
-    font-weight: bold;
-}
-
-.item3{
-    text-align: center;
-    height:auto;
-    border: 2px solid transparent;
-
-    opacity: 0;
-    animation: fadeIn 1s ease-in 600ms;
-    animation-fill-mode: forwards;
-}
-
-.item3:hover{
-    font-size: 104%;
-    border: 0px solid transparent;
-    font-weight: bold;
-}
-
-.item4{
-    text-align: center;
-    height:auto;
-    border: 2px solid transparent;
-
-    opacity: 0;
-    animation: fadeIn 1s ease-in 650ms;
-    animation-fill-mode: forwards;
-}
-
-.item4:hover{
-    font-size: 104%;
-    border: 0px solid transparent;
-    font-weight: bold;
-}
-
-.item5{
-    text-align: center;
-    height:auto;
-    border: 2px solid transparent;
-
-    opacity: 0;
-    animation: fadeIn 1s ease-in 700ms;
-    animation-fill-mode: forwards;
-}
-
-.item5:hover{
-    font-size: 104%;
-    border: 0px solid transparent;
-    font-weight: bold;
-}
-
-.item6{
-    text-align: center;
-    height:auto;
-    border: 2px solid transparent;
-
-    opacity: 0;
-    animation: fadeIn 1s ease-in 750ms;
-    animation-fill-mode: forwards;
-}
-
-.item6:hover{
-    font-size: 104%;
-    border: 0px solid transparent;
-    font-weight: bold;
-}
-
-.item7{
-    text-align: center;
-    height:auto;
-    border: 2px solid transparent;
-
-    opacity: 0;
-    animation: fadeIn 1s ease-in 800ms;
-    animation-fill-mode: forwards;
-}
-
-.item7:hover{
-    font-size: 104%;
-    border: 0px solid transparent;
-    font-weight: bold;
-}
-
-.item8{
-    text-align: center;
-    height:auto;
-    border: 2px solid transparent;
-
-    opacity: 0;
-    animation: fadeIn 1s ease-in 850ms;
-    animation-fill-mode: forwards;
-}
-
-.item9:hover{
-    font-size: 104%;
-    border: 0px solid transparent;
-    font-weight: bold;
-}
-
-.item9{
-    text-align: center;
-    height:auto;
-    border: 2px solid transparent;
-
-    opacity: 0;
-    animation: fadeIn 1s ease-in 900ms;
-    animation-fill-mode: forwards;
-}
-
-.item8:hover{
-    font-size: 104%;
-    border: 0px solid transparent;
-    font-weight: bold;
+.item:hover{
+    text-shadow: 0px 0px 1px white;
+    font-weight: bolder;
 }
 
 @keyframes fadeIn {
