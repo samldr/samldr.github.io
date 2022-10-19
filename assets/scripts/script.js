@@ -30,5 +30,5 @@ function linkDisplay(num) {
 }
 
 function linkHide() {       
-    //document.getElementById("linkTitle").innerHTML = null;
+    document.getElementById("linkTitle").innerHTML = null;
 }

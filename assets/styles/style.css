@@ -75,6 +75,14 @@ a {
     animation-fill-mode: forwards;
 }
 
+.links-spacing{
+    padding-right: 1px;
+    
+    opacity: 0;
+    animation: fadeIn 1s ease-in 750ms;
+    animation-fill-mode: forwards;
+}
+
 /* divs w/o animations */
 .body-flex {
     display: flex;
@@ -97,10 +105,6 @@ a {
     font-size: 0px;
     padding: 0%;
     cursor:pointer;
-}
-
-.links-spacing{
-    padding-right: 1px;
 }
 
 .subtitlecontainer{
