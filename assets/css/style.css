@@ -15,8 +15,8 @@ a {
 
 .dark-mode {
     background-color:#181818; 
-    color: white;
-    fill: white;
+    color: #FFF8E7;
+    fill: #FFF8E7;
 }
 
 .light-mode {
