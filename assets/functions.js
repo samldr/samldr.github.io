@@ -1,14 +1,12 @@
 function lightTheme() {
-    var element = document.body;
-    element.classList.remove('dark-mode');
-    element.classList.add('light-mode');
+    document.body.classList.remove('dark-mode');
+    document.body.classList.add('light-mode');
     localStorage.setItem('mode','light-mode') 
 }
 
 function darkTheme() {
-    var element = document.body;
-    element.classList.remove('light-mode');
-    element.classList.add('dark-mode'); 
+    document.body.classList.remove('light-mode');
+    document.body.classList.add('dark-mode'); 
     localStorage.setItem('mode','dark-mode')
 }
 
