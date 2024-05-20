@@ -1,11 +1,11 @@
 /* general */
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
     text-align: left;
     vertical-align: middle;
     margin-top: 72px;
-    transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+    /* transition: color 500ms ease-in-out, background-color 500ms ease-in-out; */
 }
 
 a {
@@ -13,17 +13,17 @@ a {
     text-decoration: none;
 }
 
-.dark-mode {
-    background-color:#181818; 
+/* .dark-mode {
+    /* background-color:#181818; 
     color: #FFF8E7;
-    fill: #FFF8E7;
+    fill: #FFF8E7; 
 }
 
 .light-mode {
-    background-color:white; 
+    /* background-color:white; 
     color: black;
-    fill: black;
-}
+    fill: black; 
+} */
 
 
 /* divs w/ animations*/
@@ -59,9 +59,9 @@ a {
     align-items: center;
     font-size: 24px;
 
-    opacity: 0;
+    /* opacity: 0;
     animation: fadeIn 1s ease-in 750ms;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 .btn-out {
