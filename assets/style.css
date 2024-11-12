@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/vincentdoerig/latex-css/blob/master/LICENSE)
 */
 
+
 @font-face {
   font-family: 'Latin Modern';
   font-style: normal;
@@ -240,10 +241,10 @@ a:visited {
   color: var(--link-visited);
 }
 
-a:focus {
+/* a:focus {
   outline-offset: 2px;
   outline: 2px solid var(--link-focus-outline);
-}
+} */
 
 /* Make images easier to work with */
 img {
@@ -728,4 +729,9 @@ h4,
 h5,
 h6 {
   margin-bottom: 0.8rem;
+}
+
+html {
+  visibility: visible;
+  opacity: 1;
 }

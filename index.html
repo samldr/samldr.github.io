@@ -1,10 +1,12 @@
 <html lang="en">
-    <head> 
+    <head>
+        <style>html{visibility: hidden; opacity: 0;}</style>  
         <title>Sam Leader | Home</title>
         
         <link rel="stylesheet" href="assets/style.css">
-        <link rel="icon" type="image/x-icon" href="assets/favicon.png">
-        <style>html{visibility: hidden; opacity: 0;}</style>
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+
+        <script>require('dotenv').config();</script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Sam Leader">
@@ -19,8 +21,13 @@
 
             gtag('config', 'G-PE3K37R0P2');
         </script>
+
+<script type="text/javascript" src="lastfm.api.md5.js"></script>
+<script type="text/javascript" src="lastfm.api.js"></script>
+
     </head>
     <body>
+        <script>localStorage.getItem("mode")=="dark"?document.body.classList.add("latex-dark"):localStorage?.getItem("mode")??localStorage.setItem("mode", "light");</script>
         <div class="abstract">
             <!-- <img src="assets/me.jpg" style="display: block;
             margin-left: auto;
@@ -29,7 +36,59 @@
             <p><strong>email:</strong> sleader (at) ualberta (dot) ca</p>
             <p><a href="https://linkedin.com/in/sam-leader">linkedin</a> | <a href="https://github.com/samldr">github</a></p>
         </div>
-        <p>I am a fourth-year electrical engineering co-op student at the University of Alberta. I co-lead AlbertaSat's magnetometer payload (DFGM) team and work with Dr. Richard Marchand on plasma physics simulations. I also previously developed instrumentation for the superconductivity and magnetism lab at Polytechnique Montréal.</p>
-    </body>
-    <style>html{visibility: visible; opacity: 1;}</style>        
+        <p>I am a fourth-year electrical engineering co-op student at the University of Alberta. I co-lead the development of <a href ="https://albertasat.ca/">AlbertaSat's</a> magnetometer payload (DFGM) for the Ex-Alta 3 cubesat, I work with <a href="https://sites.ualberta.ca/~rmarchan/">Dr. Richard Marchand</a> on computational plasma physics, and I previously developed electronics for the <a href="https://www.polymtl.ca/expertises/laboratoire-de-supraconductivite-et-magnetisme-lsm">LSM</a> at Polytechnique Montréal.</p>
+        <h3>Projects & Interests</h3>
+        <ul>
+            <li><a href="https://github.com/samldr/wave-optics">wave-optics</a>: a 2D wave optics simulator made in C++ (forever WIP)</li>
+            <li><a href="pages/cpcb.html">cpcb</a>: generative art based on graphics from an unseen world...</li>
+            <li>my favourite song right now is <i id="song"></i> by <span id="artist"></span><label for="sn-1" class="sidenote-toggle sidenote-number"></label>
+                <input type="checkbox" id="sn-1" class="sidenote-toggle" />
+                <span class="sidenote">updates automatically</span></li>
+        </ul>
+        <!-- <script>
+            // Replace with your own Last.fm API key
+            const apiKey = ''; 
+            const username = '';  // Replace with the Last.fm username you want to query
+            const apiUrl = `https://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=${username}&period=7day&limit=1&api_key=${apiKey}&format=json`;
+    
+            // Fetch recent tracks
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    track = data.toptracks.track[0];
+                    song = track.name;
+                    artist = track.artist.name;
+                    
+                    document.getElementById("song").innerHTML = song;
+                    document.getElementById("artist").innerHTML = artist;
+                })
+                .catch(error => {
+                    console.error('Error fetching Last.fm data:', error);
+                    document.getElementById('recent-tracks').innerHTML = 'Failed to load tracks.';
+                });
+        </script> -->
+        <script>                    
+            document.getElementById("song").innerHTML = "Schizophrenia";
+            document.getElementById("artist").innerHTML = "Sonic Youth";
+        </script>
+
+        <h3>Publications, etc.</h3>
+        <p>Includes journal publications, conference proceedings, posters, basically everything.</p>
+        <ul>
+            <li><i>Simulation of Lander-space interaction in Lunar environment,</i> (2024) <br>R. Marchand, S. Leader - 17th Spacecraft Charging and Technology Conference</li>
+        </ul>
+        <div class="abstract"><small>
+            <a href="javascript:void(0);" id="dark-mode-toggle">dark/light</a>
+            <p>last updated 2024-11-11</p>
+        </small></div>
+        <script>
+            document
+                .querySelector("#dark-mode-toggle")
+                .addEventListener('click', () => {
+                    document.body.classList.toggle("latex-dark");
+                    document.body.classList.contains("latex-dark")?localStorage.setItem("mode", "dark"):localStorage.setItem("mode", "light");
+                });
+        </script>
+    </body>      
 </html>
+

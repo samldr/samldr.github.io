@@ -1,0 +1,64 @@
+<html lang="en">
+    <head>
+        <style>html{visibility: hidden; opacity: 0;}</style> 
+        <title>Sam Leader | CPCB</title>
+        
+        <link rel="stylesheet" href="../assets/style.css">
+        <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+        
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Sam Leader">
+        <meta name="description" content="Computers, Pattern, Chaos, and Beauty">
+
+    </head>
+    <body>
+        <script>
+            // probably improper use of ?? here but it gets the job done
+            localStorage.getItem("mode")=="dark"?document.body.classList.add("latex-dark"):localStorage?.getItem("mode")??localStorage.setItem("mode", "light");
+         </script>
+    <div class="abstract">
+        <p><strong>Computers, Pattern, Chaos, and Beauty</strong></p>
+        <p><a href="../index.html">back</a></p>
+    </div>   
+    <p>Generative art made with MATLAB based on algorithms from Clifford A. Pickover's book <em>Computers, Patterns, Chaos, and Beauty: Graphics from an Unseen World</em>.</p>
+    <br>
+    <figure style="display: block; margin-left: auto; margin-right: auto; width: 80%; ">
+        <img src="../assets/images/cpcb/attractor1.jpg" >
+        <figcaption style="max-width: fit-content; margin-left: auto; margin-right: auto;">Figure 1: Strange Attractor</figcaption>
+    </figure>
+
+    <br>
+    <figure style="display: block; margin-left: auto; margin-right: auto; width: 80%; ">
+        <img src="../assets/images/cpcb/spiral2.jpg">
+        <figcaption style="max-width: fit-content; margin-left: auto; margin-right: auto;">Figure 2: Spiral</figcaption>
+    </figure>
+<!--     
+    <br>
+    <figure style="display: block; margin-left: auto; margin-right: auto; width: 80%; ">
+        <img src="../assets/images/cpcb/attractor2.jpg">
+        <figcaption style="max-width: fit-content; margin-left: auto; margin-right: auto;">Figure 3: Strange Attractor #2</figcaption>
+    </figure>
+    
+    <br>
+    <figure style="display: block; margin-left: auto; margin-right: auto; width: 80%; ">
+        <img src="../assets/images/cpcb/spiral1.jpg">
+        <figcaption style="max-width: fit-content; margin-left: auto; margin-right: auto;">Figure 4: Spiral #2</figcaption> 
+    </figure> -->
+
+
+    <div class="abstract"><small>
+        <a href="javascript:void(0);" id="dark-mode-toggle">dark/light</a>
+        <p>last updated 2024-11-11</p>
+    </small></div>
+    <script>
+        document
+            .querySelector("#dark-mode-toggle")
+            .addEventListener('click', () => {
+                document.body.classList.toggle("latex-dark");
+                document.body.classList.contains("latex-dark")?localStorage.setItem("mode", "dark"):localStorage.setItem("mode", "light");
+            });
+    </script>
+
+    </body>        
+</html>
