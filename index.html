@@ -45,10 +45,10 @@
                 <input type="checkbox" id="sn-1" class="sidenote-toggle" />
                 <span class="sidenote">updates automatically</span></li>
         </ul>
-        <!-- <script>
+        <script>
             // Replace with your own Last.fm API key
-            const apiKey = ''; 
-            const username = '';  // Replace with the Last.fm username you want to query
+            const apiKey = process.env.API; 
+            const username = process.env.USER;  // Replace with the Last.fm username you want to query
             const apiUrl = `https://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=${username}&period=7day&limit=1&api_key=${apiKey}&format=json`;
     
             // Fetch recent tracks
@@ -63,14 +63,13 @@
                     document.getElementById("artist").innerHTML = artist;
                 })
                 .catch(error => {
-                    console.error('Error fetching Last.fm data:', error);
-                    document.getElementById('recent-tracks').innerHTML = 'Failed to load tracks.';
+                    console.error('last.fm error', error);
                 });
-        </script> -->
-        <script>                    
+        </script>
+        <!-- <script>                    
             document.getElementById("song").innerHTML = "Schizophrenia";
             document.getElementById("artist").innerHTML = "Sonic Youth";
-        </script>
+        </script> -->
 
         <h3>Publications, etc.</h3>
         <p>Includes journal publications, conference proceedings, posters, basically everything.</p>
@@ -79,7 +78,7 @@
         </ul>
         <div class="abstract"><small>
             <a href="javascript:void(0);" id="dark-mode-toggle">dark/light</a>
-            <p>last updated 2024-11-11</p>
+            <p>last updated 2024-11-14</p>
         </small></div>
         <script>
             document
